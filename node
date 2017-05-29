@@ -1,4 +1,4 @@
-etcd --name $node_name --initial-advertise-peer-urls http://$public_ip:2380 \
+etcd2 --name $node_name --initial-advertise-peer-urls http://$public_ip:2380 \
   --listen-peer-urls http://$public_ip:2380 \
   --listen-client-urls http://$public_ip:2379,http://127.0.0.1:2379 \
   --advertise-client-urls http://$public_ip:2379 \
