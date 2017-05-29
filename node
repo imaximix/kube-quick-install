@@ -1,0 +1,5 @@
+etcd --name $node_name --initial-advertise-peer-urls http://$public_ip:2380 \
+  --listen-peer-urls http://$public_ip:2380 \
+  --listen-client-urls http://$public_ip:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls http://$public_ip:2379 \
+  --discovery https://discovery.etcd.io/7a9c5a6a1dea11fc5097e875489c9188
