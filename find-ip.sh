@@ -1,1 +1,1 @@
-ifconfig en0 | grep 'inet ' | cut -d ' ' -f2
+ifconfig eth0 | grep 'inet ' | awk -F' ' '{print $2}'
