@@ -1,1 +1,1 @@
-ifconfig eth0 | grep 'inet ' | awk -F' ' '{print $2}'
+public_ip="$(ifconfig eth0 | grep 'inet ' | awk -F' ' '{print $2}')"
