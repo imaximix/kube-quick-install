@@ -1,0 +1,8 @@
+etcd2 --name $node_name \
+--discovery-srv secretless.ro \
+--initial-advertise-peer-urls http://$node_name.secretless.ro:2380 \
+--initial-cluster-token etcd-cluster-1 \
+--initial-cluster-state new \
+--advertise-client-urls http://$node_name.secretless.ro:2379 \
+--listen-client-urls http://$node_name.secretless.ro:2379 \
+--listen-peer-urls http://$node_name.secretless.ro:2380
